@@ -1,0 +1,35 @@
+	// Varaibles
+$it-gray: #ddd
+$background-dark: #512DA8
+$carousel-item-height: 300px
+
+.navbar-inverse
+	background: $background-dark
+
+.carousel .item
+	height: $carousel-item-height
+
+	// Nesting
+.carousel
+	background: $background-dark
+
+	&-item
+		height: $carousel-item-height
+		img
+			position: absolute
+			top: 0
+			left: 0
+			min-height: 300px
+	// Mixins
+@mixin zero-margin
+	margin: 0px auto
+	background: @white
+.row-header
+	@include zero-margin
+	padding: 0px auto
+.row-content
+	@include zero-margin
+	border-bottom: 1px ridge
+	min-height: 400px
+	padding: 50px 0px 50px 0px
+	// Mixins with Parameters

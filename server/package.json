@@ -1,0 +1,19 @@
+{
+  "name": "camunited_server",
+  "version": "1.0.0",
+  "description": "MongoDB Atlas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Camunited Team",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongodb": "4.10",
+    "mongoose": "^6.6.3"
+  }
+}
